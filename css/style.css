@@ -448,6 +448,9 @@ a:hover {
 .tag.breakfast { background: #FFF3E0; color: #E65100; }
 .tag.main { background: #FCE4EC; color: #C2185B; }
 .tag.quick { background: #E3F2FD; color: #1565C0; }
+.tag.airfryer { background: #FFF8E1; color: #FF6F00; }
+.tag.salad { background: #E8F5E9; color: #388E3C; }
+.tag.japanese { background: #FCE4EC; color: #D81B60; }
 
 /* Recipe List */
 .recipe-list {

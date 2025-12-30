@@ -177,7 +177,7 @@ const recipes = {
   'fish-fragrant-aubergine': {
     title: 'Sichuan "Fish-Fragrant" Aubergine Stew',
     chinese: '素魚香茄子',
-    tags: ['Chinese', 'Main'],
+    tags: ['Chinese', 'Main', 'Air Fryer'],
     time: '35 mins',
     servings: '3-4',
     difficulty: 'Medium',
@@ -392,7 +392,7 @@ const recipes = {
   'cauliflower-steak': {
     title: 'Roasted / Air-Fried Cauliflower Steak',
     chinese: '',
-    tags: ['Western', 'Main'],
+    tags: ['Western', 'Main', 'Air Fryer'],
     time: '35 mins',
     servings: '2-4',
     difficulty: 'Easy',
@@ -456,7 +456,7 @@ const recipes = {
   'miso-aubergine': {
     title: 'Miso Aubergine (Nasu Dengaku / ナス田楽)',
     chinese: '',
-    tags: ['Japanese', 'Main'],
+    tags: ['Japanese', 'Main', 'Air Fryer'],
     time: '30 mins',
     servings: '2-4',
     difficulty: 'Easy',
