@@ -454,7 +454,7 @@ const recipes = {
   // =============================================
 
   'miso-aubergine': {
-    title: 'Miso Aubergine (Nasu Dengaku)',
+    title: 'Miso Aubergine (Nasu Dengaku / ナス田楽)',
     chinese: '',
     tags: ['Japanese', 'Main'],
     time: '30 mins',
@@ -479,7 +479,10 @@ const recipes = {
       'Roast for another 10-15 mins until glaze is bubbling and caramelised.',
       'Garnish with sesame seeds and spring onions.'
     ],
-    tip: 'The glaze should be sweet and savoury with a slight char. Watch it doesn\'t burn!'
+    tip: [
+      'The glaze should be sweet and savoury with a slight char. Watch it doesn\'t burn!',
+      'You can also choose to use an air fryer for this recipe. Cook at 200°C for 12 mins, then glaze and cook for another 8-10 mins.'
+    ]
   },
 
   // =============================================
