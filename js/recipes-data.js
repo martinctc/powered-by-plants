@@ -602,5 +602,36 @@ const recipes = {
       'Enjoy warm!'
     ],
     tip: 'Prep the dry ingredients in jars for quick weekday breakfasts. Overnight oats work great with this combo too!'
+  },
+
+  // =============================================
+  // SIDES & SNACKS
+  // =============================================
+
+  'brussels-sprouts-glaze': {
+    title: 'Roasted Brussels Sprouts in Soy Sauce Glaze',
+    chinese: '',
+    tags: ['Western', 'Main', 'Air Fryer', 'Quick'],
+    time: '15 mins',
+    servings: '2-4',
+    difficulty: 'Easy',
+    ingredients: [
+      '400g brussels sprouts, halved',
+      '2 tbsp olive oil',
+      '2 tbsp nutritional yeast',
+      'Salt and pepper to taste',
+      '2 tbsp soy sauce',
+      '1 tbsp maple syrup'
+    ],
+    instructions: [
+      'Halve the brussels sprouts and place in a bowl.',
+      'Toss with olive oil, nutritional yeast, salt, and pepper until evenly coated.',
+      'Spread in a single layer in the air fryer basket.',
+      'Air fry at 180°C for 10 minutes, shaking halfway, until crispy and golden.',
+      'Meanwhile, heat a pan over medium heat. Add soy sauce and maple syrup, simmer until slightly thickened.',
+      'Toss the crispy brussels sprouts in the glaze until evenly coated.',
+      'Serve immediately while still crispy!'
+    ],
+    tip: 'This glaze technique works brilliantly with other vegetables too! Try tenderstem broccoli (8 mins), green beans (6-7 mins), or cauliflower florets (12 mins) — just adjust the air fryer time accordingly.'
   }
 };
