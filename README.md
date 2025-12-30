@@ -15,7 +15,7 @@ Simply open `index.html` in your web browser to preview the site.
    git add .
    git commit -m "Initial commit: Powered by Plants website"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git remote add origin https://github.com/YOUR_USERNAME/powered-by-plants.git
    git push -u origin main
    ```
 
@@ -28,7 +28,7 @@ Simply open `index.html` in your web browser to preview the site.
 
 3. **Your site will be live at:**
    ```
-   https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+   https://YOUR_USERNAME.github.io/powered-by-plants/
    ```
 
 ## 📁 Project Structure
