@@ -73,6 +73,27 @@
       opacity: 1;
     }
 
+    /* Recipe card icons */
+    .recipe-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2.5rem;
+      opacity: 0.8;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .recipe-card:hover .recipe-icon {
+      transform: scale(1.2) rotate(5deg);
+      opacity: 1;
+    }
+    @media (max-width: 768px) {
+      .recipe-icon {
+        font-size: 2rem;
+        top: 0.75rem;
+        right: 0.75rem;
+      }
+    }
+
     /* Modal styles */
     .recipe-modal {
       display: none;
@@ -310,6 +331,7 @@
         
         <!-- Chinese Recipes -->
         <div class="recipe-card" data-tags="chinese quick main" data-recipe="spring-onion-noodles">
+          <span class="recipe-icon">🍜</span>
           <h3>Noodles in Spring Onion & Soy Sauce</h3>
           <p class="chinese-name">蔥油拌麵</p>
           <div class="recipe-tags">
@@ -320,6 +342,7 @@
         </div>
 
         <div class="recipe-card" data-tags="chinese main" data-recipe="creamed-cabbage">
+          <span class="recipe-icon">🥬</span>
           <h3>Chinese Creamed Cabbage</h3>
           <p class="chinese-name">奶油津白 (using kombu stock as substitute)</p>
           <div class="recipe-tags">
@@ -329,6 +352,7 @@
         </div>
 
         <div class="recipe-card" data-tags="chinese main" data-recipe="shanghai-rice-cake">
+          <span class="recipe-icon">🥡</span>
           <h3>Shanghainese Stir-Fried Rice Cake</h3>
           <p class="chinese-name">上海炒年糕 — with shiitake, wood ear, and deep-fried tofu</p>
           <div class="recipe-tags">
@@ -338,6 +362,7 @@
         </div>
 
         <div class="recipe-card" data-tags="chinese main" data-recipe="braised-vegetables">
+          <span class="recipe-icon">🍲</span>
           <h3>Braised Vegetables with Red Fermented Beancurd</h3>
           <p class="chinese-name">南乳齋煲</p>
           <div class="recipe-tags">
@@ -347,6 +372,7 @@
         </div>
 
         <div class="recipe-card" data-tags="chinese quick" data-recipe="liang-pi">
+          <span class="recipe-icon">🥒</span>
           <h3>Cold Liang Pi with Cucumber</h3>
           <p class="chinese-name">麻醬涼皮 — in a vinegar, garlic, and chilli oil dressing</p>
           <div class="recipe-tags">
@@ -356,6 +382,7 @@
         </div>
 
         <div class="recipe-card" data-tags="chinese main" data-recipe="fish-fragrant-aubergine">
+          <span class="recipe-icon">🍆</span>
           <h3>Sichuan "Fish-Fragrant" Aubergine Stew</h3>
           <p class="chinese-name">素魚香茄子 (using shiitake mushrooms)</p>
           <div class="recipe-tags">
@@ -366,6 +393,7 @@
 
         <!-- Western Recipes -->
         <div class="recipe-card" data-tags="western main" data-recipe="mushroom-bourguignon">
+          <span class="recipe-icon">🍄</span>
           <h3>Mushroom Bourguignon</h3>
           <p class="chinese-name">Served with couscous or potatoes</p>
           <div class="recipe-tags">
@@ -375,6 +403,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="mushroom-risotto">
+          <span class="recipe-icon">🍚</span>
           <h3>Mushroom Risotto with Caramelised Leek</h3>
           <p class="chinese-name">Creamy and comforting</p>
           <div class="recipe-tags">
@@ -384,6 +413,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="mushroom-soup">
+          <span class="recipe-icon">🥣</span>
           <h3>Mushroom and Onion Soup</h3>
           <p class="chinese-name">Served with sourdough</p>
           <div class="recipe-tags">
@@ -393,6 +423,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="madras-curry">
+          <span class="recipe-icon">🍛</span>
           <h3>Madras Curry with Juicy Marbles</h3>
           <p class="chinese-name">With chickpeas and lentils</p>
           <div class="recipe-tags">
@@ -402,6 +433,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="lions-mane-steak">
+          <span class="recipe-icon">🦁</span>
           <h3>Pan-Fried Lion's Mane Mushroom Steak</h3>
           <p class="chinese-name">Meaty and satisfying</p>
           <div class="recipe-tags">
@@ -411,6 +443,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main quick" data-recipe="pesto-pasta">
+          <span class="recipe-icon">🍝</span>
           <h3>All Variations of Pesto Pasta</h3>
           <p class="chinese-name">Basil, spinach, aubergine, mushroom, or sundried tomato</p>
           <div class="recipe-tags">
@@ -421,6 +454,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="cauliflower-steak">
+          <span class="recipe-icon">🥦</span>
           <h3>Roasted / Air-Fried Cauliflower Steak</h3>
           <p class="chinese-name">Crispy and flavourful</p>
           <div class="recipe-tags">
@@ -430,6 +464,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western main" data-recipe="grain-stir-fry">
+          <span class="recipe-icon">🌾</span>
           <h3>Leek, Quinoa, Lentil & Bulgur Wheat Stir-Fry</h3>
           <p class="chinese-name">With tofu — protein-packed</p>
           <div class="recipe-tags">
@@ -440,6 +475,7 @@
 
         <!-- Japanese -->
         <div class="recipe-card" data-tags="japanese main" data-recipe="miso-aubergine">
+          <span class="recipe-icon">🇯🇵</span>
           <h3>Miso Aubergine (Nasu Dengaku)</h3>
           <p class="chinese-name">Sweet and savoury glazed aubergine</p>
           <div class="recipe-tags">
@@ -450,6 +486,7 @@
 
         <!-- Salads & Light -->
         <div class="recipe-card" data-tags="western salad quick" data-recipe="combo-salad">
+          <span class="recipe-icon">🥗</span>
           <h3>All Combos Salad</h3>
           <p class="chinese-name">Chicory, tomatoes, beetroot, leafy veg, roasted mushroom, aubergine, courgette, all the nuts</p>
           <div class="recipe-tags">
@@ -460,6 +497,7 @@
         </div>
 
         <div class="recipe-card" data-tags="western quick" data-recipe="bruschetta">
+          <span class="recipe-icon">🍅</span>
           <h3>Tomato and Basil Bruschetta</h3>
           <p class="chinese-name">Fresh and simple</p>
           <div class="recipe-tags">
@@ -470,6 +508,7 @@
 
         <!-- Breakfast -->
         <div class="recipe-card" data-tags="breakfast quick western" data-recipe="avocado-toast">
+          <span class="recipe-icon">🥑</span>
           <h3>Smashed Avocado on Toast</h3>
           <p class="chinese-name">A classic for good reason</p>
           <div class="recipe-tags">
@@ -480,6 +519,7 @@
         </div>
 
         <div class="recipe-card" data-tags="breakfast" data-recipe="porridge">
+          <span class="recipe-icon">🥣</span>
           <h3>Porridge with All the Toppings</h3>
           <p class="chinese-name">Chia, flaxseed, dried fruits, cacao nibs, and peanut butter</p>
           <div class="recipe-tags">
