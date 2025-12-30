@@ -633,5 +633,37 @@ const recipes = {
       'Serve immediately while still crispy!'
     ],
     tip: 'This glaze technique works brilliantly with other vegetables too! Try tenderstem broccoli (8 mins), green beans (6-7 mins), or cauliflower florets (12 mins) — just adjust the air fryer time accordingly.'
+  },
+
+  'vegan-chinese-soup': {
+    title: 'Vegan Chinese Soup',
+    chinese: '素老火湯',
+    tags: ['Chinese', 'Main'],
+    time: '2-3 hours',
+    servings: '4-6',
+    difficulty: 'Easy',
+    ingredients: [
+      '2 carrots, peeled and cut into chunks',
+      '2 ears of sweetcorn (玉米), cut into sections',
+      '1 handful of goji berries (枸杞)',
+      '8-10 red dates (紅棗)',
+      '2 tbsp sweet and bitter apricot kernels (南北杏)',
+      '1 handful of cashew nuts',
+      '1 handful of lotus seeds (蓮子)',
+      '1 handful of chestnuts (栗子), peeled',
+      '1 section of lotus root (蓮藕), sliced (optional, for extra sweetness)',
+      '2-3 litres of water',
+      'Salt to taste'
+    ],
+    instructions: [
+      'Rinse all dried ingredients (goji berries, red dates, apricot kernels, lotus seeds) and soak for 10-15 minutes.',
+      'Prepare the vegetables: peel and chop carrots, cut sweetcorn into sections, slice lotus root if using.',
+      'Add all ingredients to a large pot or rice cooker with 2-3 litres of water.',
+      'If using a pot: Bring to boil, then reduce to a gentle simmer for 2-3 hours.',
+      'If using a rice cooker: Use the "soup" setting or cook on "keep warm" for 2-3 hours.',
+      'Season with salt to taste before serving.',
+      'Serve hot — the soup is naturally sweet from the dates, carrots, and sweetcorn.'
+    ],
+    tip: 'This soup is incredibly versatile! Other great additions include: sliced apples or pears (for sweetness), dried lion\'s mane mushrooms (猴頭菇), dried shiitake mushrooms (冬菇), snow fungus (銀耳) for texture, or dried tangerine peel (陳皮) for fragrance. The rice cooker method is great for hands-off cooking — just set it and forget it!'
   }
 };
