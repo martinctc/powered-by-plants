@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tried and tested vegan recipes - from Chinese classics to Western favourites. Perfect for Veganuary!">
+  <title>Recipes | Powered by Plants</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .recipe-card.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Powered <span>by Plants</span> 🌱</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-vegan.html">Why Vegan?</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; background-image: url('https://images.unsplash.com/photo-1543362906-acfc16c67564?w=1920&q=80');">
+    <div class="hero-content">
+      <h1>Recipes</h1>
+      <p class="subtitle">Tried and tested favourites from my Veganuary journeys</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="section section-white" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Filter by Category</h2>
+        <p>Click a tag to filter recipes</p>
+      </div>
+      
+      <div class="recipe-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="chinese">Chinese</button>
+        <button class="filter-btn" data-filter="western">Western</button>
+        <button class="filter-btn" data-filter="japanese">Japanese</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="main">Main</button>
+        <button class="filter-btn" data-filter="quick">Quick</button>
+        <button class="filter-btn" data-filter="salad">Salad</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe List -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="recipe-list" id="recipe-list">
+        
+        <!-- Chinese Recipes -->
+        <div class="recipe-card" data-tags="chinese quick main">
+          <h3>Noodles in Spring Onion & Soy Sauce</h3>
+          <p class="chinese-name">蔥油拌麵</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag quick">Quick</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="chinese main">
+          <h3>Chinese Creamed Cabbage</h3>
+          <p class="chinese-name">奶油津白 (using kombu stock as substitute)</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="chinese main">
+          <h3>Shanghainese Stir-Fried Rice Cake</h3>
+          <p class="chinese-name">上海炒年糕 — with shiitake, wood ear, and deep-fried tofu</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="chinese main">
+          <h3>Braised Vegetables with Red Fermented Beancurd</h3>
+          <p class="chinese-name">南乳齋煲</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="chinese quick">
+          <h3>Cold Liang Pi with Cucumber</h3>
+          <p class="chinese-name">麻醬涼皮 — in a vinegar, garlic, and chilli oil dressing</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag quick">Quick</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="chinese main">
+          <h3>Sichuan "Fish-Fragrant" Aubergine Stew</h3>
+          <p class="chinese-name">素魚香茄子 (using shiitake mushrooms)</p>
+          <div class="recipe-tags">
+            <span class="tag chinese">Chinese</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <!-- Western Recipes -->
+        <div class="recipe-card" data-tags="western main">
+          <h3>Mushroom Bourguignon</h3>
+          <p class="chinese-name">Served with couscous or potatoes</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Mushroom Risotto with Caramelised Leek</h3>
+          <p class="chinese-name">Creamy and comforting</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Mushroom and Onion Soup</h3>
+          <p class="chinese-name">Served with sourdough</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Madras Curry with Juicy Marbles</h3>
+          <p class="chinese-name">With chickpeas and lentils</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Pan-Fried Lion's Mane Mushroom Steak</h3>
+          <p class="chinese-name">Meaty and satisfying</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main quick">
+          <h3>All Variations of Pesto Pasta</h3>
+          <p class="chinese-name">Basil, spinach, aubergine, mushroom, or sundried tomato</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+            <span class="tag quick">Quick</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Roasted / Air-Fried Cauliflower Steak</h3>
+          <p class="chinese-name">Crispy and flavourful</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western main">
+          <h3>Leek, Quinoa, Lentil & Bulgur Wheat Stir-Fry</h3>
+          <p class="chinese-name">With tofu — protein-packed</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <!-- Japanese -->
+        <div class="recipe-card" data-tags="japanese main">
+          <h3>Miso Aubergine (Nasu Dengaku)</h3>
+          <p class="chinese-name">Sweet and savoury glazed aubergine</p>
+          <div class="recipe-tags">
+            <span class="tag japanese">Japanese</span>
+            <span class="tag main">Main</span>
+          </div>
+        </div>
+
+        <!-- Salads & Light -->
+        <div class="recipe-card" data-tags="western salad quick">
+          <h3>All Combos Salad</h3>
+          <p class="chinese-name">Chicory, tomatoes, beetroot, leafy veg, roasted mushroom, aubergine, courgette, all the nuts</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag salad">Salad</span>
+            <span class="tag quick">Quick</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="western quick">
+          <h3>Tomato and Basil Bruschetta</h3>
+          <p class="chinese-name">Fresh and simple</p>
+          <div class="recipe-tags">
+            <span class="tag western">Western</span>
+            <span class="tag quick">Quick</span>
+          </div>
+        </div>
+
+        <!-- Breakfast -->
+        <div class="recipe-card" data-tags="breakfast quick western">
+          <h3>Smashed Avocado on Toast</h3>
+          <p class="chinese-name">A classic for good reason</p>
+          <div class="recipe-tags">
+            <span class="tag breakfast">Breakfast</span>
+            <span class="tag western">Western</span>
+            <span class="tag quick">Quick</span>
+          </div>
+        </div>
+
+        <div class="recipe-card" data-tags="breakfast">
+          <h3>Porridge with All the Toppings</h3>
+          <p class="chinese-name">Chia, flaxseed, dried fruits, cacao nibs, and peanut butter</p>
+          <div class="recipe-tags">
+            <span class="tag breakfast">Breakfast</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Your Own Section -->
+  <section class="section section-gradient">
+    <div class="container">
+      <div class="placeholder-content" style="background: transparent; border: none;">
+        <h3>💡 Want to Add Your Own Recipes?</h3>
+        <p>This website is designed to be easy to update! Simply edit this HTML file to add more recipes using the same card format.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Powered by Plants 🌱</h4>
+        <p style="color: rgba(255,255,255,0.7);">Sharing my Veganuary journey — tips, recipes, and discoveries from London and Hong Kong.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-vegan.html">Why Vegan?</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Join the Journey</h4>
+        <p style="color: rgba(255,255,255,0.7);">Veganuary 2026 — Let's make it count!</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Powered by Plants. Made with 🧡 for the planet.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+      });
+    });
+
+    // Recipe filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const recipeCards = document.querySelectorAll('.recipe-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        // Filter recipes
+        recipeCards.forEach(card => {
+          if (filter === 'all') {
+            card.classList.remove('hidden');
+          } else {
+            const tags = card.dataset.tags.split(' ');
+            if (tags.includes(filter)) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

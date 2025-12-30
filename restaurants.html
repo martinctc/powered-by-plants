@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vegan restaurant recommendations in London and Hong Kong. Tried and tested spots for plant-based dining.">
+  <title>Restaurants | Powered by Plants</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Powered <span>by Plants</span> 🌱</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-vegan.html">Why Vegan?</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="restaurants.html" class="active">Restaurants</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80');">
+    <div class="hero-content">
+      <h1>Restaurants</h1>
+      <p class="subtitle">Vegan-friendly spots in London & Hong Kong</p>
+    </div>
+  </section>
+
+  <!-- London Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>🇬🇧 London</h2>
+        <p>My favourite vegan restaurants and places I'm keen to try</p>
+      </div>
+
+      <!-- Would Recommend -->
+      <div class="restaurant-section">
+        <h3>⭐ Would Recommend</h3>
+        
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Studio Gauthier <span class="badge">Recommended</span></h4>
+            <p>Fine dining vegan experience</p>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Tofu Vegan <span class="badge">Recommended</span></h4>
+            <p>Chinese vegan cuisine</p>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Mildreds <span class="badge">Recommended</span></h4>
+            <p>Iconic vegetarian/vegan restaurant with multiple locations</p>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Mallow <span class="badge">Recommended</span></h4>
+            <p>Modern plant-based dining</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keen to Try -->
+      <div class="restaurant-section">
+        <h3>🎯 Keen to Try</h3>
+        
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>123V Browns <span class="badge keen">On my list</span></h4>
+            <p>Plant-based at the historic Browns</p>
+          </div>
+          <a href="https://maps.app.goo.gl/MwangNE3aRUdD66g8" target="_blank" rel="noopener" class="restaurant-link">📍 Map</a>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Gauthier Soho <span class="badge keen">On my list</span></h4>
+            <p>Fine dining plant-based tasting menus</p>
+          </div>
+          <a href="https://maps.app.goo.gl/RAEk6wUBYAgzRRGq9" target="_blank" rel="noopener" class="restaurant-link">📍 Map</a>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Govinda's Soho <span class="badge keen">On my list</span></h4>
+            <p>Vegetarian Indian cuisine</p>
+          </div>
+          <a href="https://maps.app.goo.gl/qtb1xc7wUvxP7hnk7" target="_blank" rel="noopener" class="restaurant-link">📍 Map</a>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Mali Vegan Thai <span class="badge keen">On my list</span></h4>
+            <p>Earl's Court</p>
+          </div>
+          <a href="https://maps.app.goo.gl/odRAmNLiorFBUoCx8" target="_blank" rel="noopener" class="restaurant-link">📍 Map</a>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-info">
+            <h4>Plants of Roselyn <span class="badge keen">On my list</span></h4>
+            <p>London Bridge</p>
+          </div>
+          <a href="https://maps.app.goo.gl/r7DFYpt8xjEA4g4o7" target="_blank" rel="noopener" class="restaurant-link">📍 Map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Divider -->
+  <section class="parallax-section orange" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80');">
+    <div class="content">
+      <h2 style="color: white;">More Cities Coming Soon</h2>
+      <p style="font-size: 1.1rem;">Exploring plant-based dining around the world</p>
+    </div>
+  </section>
+
+  <!-- Hong Kong Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>🇭🇰 Hong Kong</h2>
+        <p>Vegan spots in Hong Kong</p>
+      </div>
+
+      <!-- Placeholder -->
+      <div class="placeholder-content">
+        <h3>🏗️ Coming Soon!</h3>
+        <p>
+          I'm still compiling my Hong Kong restaurant recommendations.<br><br>
+          <strong>To add a restaurant, copy and paste this template:</strong>
+        </p>
+        <pre style="background: var(--color-peach-light); padding: 15px; border-radius: 10px; text-align: left; overflow-x: auto; margin-top: 20px; font-size: 0.85rem;">
+&lt;div class="restaurant-card"&gt;
+  &lt;div class="restaurant-info"&gt;
+    &lt;h4&gt;Restaurant Name &lt;span class="badge"&gt;Recommended&lt;/span&gt;&lt;/h4&gt;
+    &lt;p&gt;Description or location&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;a href="YOUR_MAP_LINK" target="_blank" rel="noopener" class="restaurant-link"&gt;📍 Map&lt;/a&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
+      <!-- Example placeholder cards for Hong Kong -->
+      <div class="restaurant-section" style="margin-top: 40px;">
+        <h3>🌟 Your Recommendations</h3>
+        
+        <div class="restaurant-card" style="border: 2px dashed var(--color-peach);">
+          <div class="restaurant-info">
+            <h4 style="color: var(--color-text-light);">[Add Restaurant Name]</h4>
+            <p style="color: var(--color-text-light);">✏️ Edit this file to add your Hong Kong favourites</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips for Finding Vegan Food -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>🔍 Tips for Finding Vegan Food</h2>
+        <p>Useful resources when dining out</p>
+      </div>
+      
+      <div class="card-grid">
+        <div class="card" style="padding: 25px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">📱</div>
+          <h4 style="color: var(--color-grapefruit); margin-bottom: 10px;">HappyCow</h4>
+          <p style="margin: 0;">The go-to app for finding vegan and vegetarian restaurants worldwide.</p>
+        </div>
+        
+        <div class="card" style="padding: 25px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">🗺️</div>
+          <h4 style="color: var(--color-grapefruit); margin-bottom: 10px;">Google Maps</h4>
+          <p style="margin: 0;">Search "vegan near me" and check menu photos in reviews.</p>
+        </div>
+        
+        <div class="card" style="padding: 25px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">🍽️</div>
+          <h4 style="color: var(--color-grapefruit); margin-bottom: 10px;">Ask the Staff</h4>
+          <p style="margin: 0;">Many restaurants can veganise dishes. Don't be shy to ask!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Powered by Plants 🌱</h4>
+        <p style="color: rgba(255,255,255,0.7);">Sharing my Veganuary journey — tips, recipes, and discoveries from London and Hong Kong.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-vegan.html">Why Vegan?</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Join the Journey</h4>
+        <p style="color: rgba(255,255,255,0.7);">Veganuary 2026 — Let's make it count!</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Powered by Plants. Made with 🧡 for the planet.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
