@@ -7,7 +7,50 @@
   <title>Recipes | Powered by Plants</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
+    .recipe-card {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
     .recipe-card.hidden {
+      display: none;
+    }
+    .recipe-card.fade-out {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .recipe-card.fade-in {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .recipe-count {
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    .filter-hint {
+      text-align: center;
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .clear-filters {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      margin-left: 0.5rem;
+      transition: background 0.3s ease;
+    }
+    .clear-filters:hover {
+      background: #ee5a5a;
+    }
+    .clear-filters.hidden {
       display: none;
     }
   </style>
@@ -45,7 +88,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Filter by Category</h2>
-        <p>Click a tag to filter recipes</p>
+        <p>Click tags to filter recipes (select multiple!)</p>
       </div>
       
       <div class="recipe-filters">
@@ -57,7 +100,10 @@
         <button class="filter-btn" data-filter="main">Main</button>
         <button class="filter-btn" data-filter="quick">Quick</button>
         <button class="filter-btn" data-filter="salad">Salad</button>
+        <button class="clear-filters hidden" id="clear-filters">Clear All</button>
       </div>
+      <p class="filter-hint">💡 Tip: Select multiple tags to narrow down recipes</p>
+      <div class="recipe-count" id="recipe-count">Showing all recipes</div>
     </div>
   </section>
 
@@ -299,33 +345,138 @@
       });
     });
 
-    // Recipe filtering
+    // Recipe filtering with multi-select, animations, count, and URL hash support
     const filterBtns = document.querySelectorAll('.filter-btn');
     const recipeCards = document.querySelectorAll('.recipe-card');
+    const recipeCount = document.getElementById('recipe-count');
+    const clearFiltersBtn = document.getElementById('clear-filters');
+    const totalRecipes = recipeCards.length;
+    let activeFilters = new Set();
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Update active button
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+    // Update recipe count display
+    function updateCount() {
+      const visibleCount = document.querySelectorAll('.recipe-card:not(.hidden)').length;
+      if (activeFilters.size === 0) {
+        recipeCount.textContent = `Showing all ${totalRecipes} recipes`;
+      } else {
+        const filterNames = Array.from(activeFilters).map(f => f.charAt(0).toUpperCase() + f.slice(1)).join(' + ');
+        recipeCount.textContent = `Showing ${visibleCount} of ${totalRecipes} recipes (${filterNames})`;
+      }
+    }
 
-        const filter = btn.dataset.filter;
+    // Update URL hash
+    function updateHash() {
+      if (activeFilters.size === 0) {
+        history.replaceState(null, '', window.location.pathname);
+      } else {
+        history.replaceState(null, '', '#' + Array.from(activeFilters).join(','));
+      }
+    }
 
-        // Filter recipes
-        recipeCards.forEach(card => {
-          if (filter === 'all') {
-            card.classList.remove('hidden');
-          } else {
-            const tags = card.dataset.tags.split(' ');
-            if (tags.includes(filter)) {
-              card.classList.remove('hidden');
-            } else {
+    // Show/hide clear button
+    function updateClearButton() {
+      if (activeFilters.size > 0) {
+        clearFiltersBtn.classList.remove('hidden');
+      } else {
+        clearFiltersBtn.classList.add('hidden');
+      }
+    }
+
+    // Filter recipes with animation
+    function filterRecipes() {
+      recipeCards.forEach(card => {
+        const cardTags = card.dataset.tags.split(' ');
+        let shouldShow = false;
+
+        if (activeFilters.size === 0) {
+          shouldShow = true;
+        } else {
+          // Show if card has ALL selected filters (AND logic)
+          shouldShow = Array.from(activeFilters).every(filter => cardTags.includes(filter));
+        }
+
+        if (shouldShow) {
+          card.classList.remove('hidden');
+          card.classList.remove('fade-out');
+          card.classList.add('fade-in');
+        } else {
+          card.classList.add('fade-out');
+          setTimeout(() => {
+            if (card.classList.contains('fade-out')) {
               card.classList.add('hidden');
             }
+          }, 300);
+        }
+      });
+
+      // Update count after animation
+      setTimeout(updateCount, 350);
+      updateHash();
+      updateClearButton();
+    }
+
+    // Handle filter button clicks
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        if (filter === 'all') {
+          // Clear all filters
+          activeFilters.clear();
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        } else {
+          // Toggle this filter
+          if (activeFilters.has(filter)) {
+            activeFilters.delete(filter);
+            btn.classList.remove('active');
+          } else {
+            activeFilters.add(filter);
+            btn.classList.add('active');
           }
-        });
+          // Remove 'all' active state if other filters selected
+          const allBtn = document.querySelector('[data-filter="all"]');
+          if (activeFilters.size > 0) {
+            allBtn.classList.remove('active');
+          } else {
+            allBtn.classList.add('active');
+          }
+        }
+
+        filterRecipes();
       });
     });
+
+    // Clear all filters
+    clearFiltersBtn.addEventListener('click', () => {
+      activeFilters.clear();
+      filterBtns.forEach(b => b.classList.remove('active'));
+      document.querySelector('[data-filter="all"]').classList.add('active');
+      filterRecipes();
+    });
+
+    // Load filters from URL hash on page load
+    function loadFromHash() {
+      const hash = window.location.hash.slice(1);
+      if (hash) {
+        const filters = hash.split(',');
+        filters.forEach(filter => {
+          const btn = document.querySelector(`[data-filter="${filter}"]`);
+          if (btn && filter !== 'all') {
+            activeFilters.add(filter);
+            btn.classList.add('active');
+          }
+        });
+        if (activeFilters.size > 0) {
+          document.querySelector('[data-filter="all"]').classList.remove('active');
+          filterRecipes();
+        }
+      }
+      updateCount();
+    }
+
+    // Initialize
+    loadFromHash();
   </script>
 </body>
 </html>
