@@ -39,8 +39,8 @@ const recipes = {
     ingredients: [
       '200g dried noodles (wheat or rice)',
       '4-5 spring onions, finely sliced',
-      '3 tbsp light soy sauce',
-      '1 tbsp dark soy sauce',
+      '3 tbsp light soy sauce (生抽)',
+      '1 tbsp dark soy sauce (老抽)',
       '1 tsp sugar',
       '3 tbsp vegetable oil',
       'Pinch of white pepper'
