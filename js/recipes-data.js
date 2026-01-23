@@ -665,5 +665,46 @@ const recipes = {
       'Serve hot — the soup is naturally sweet from the dates, carrots, and sweetcorn.'
     ],
     tip: 'This soup is incredibly versatile! Other great additions include: sliced apples or pears (for sweetness), dried lion\'s mane mushrooms (猴頭菇), dried shiitake mushrooms (冬菇), snow fungus (銀耳) for texture, or dried tangerine peel (陳皮) for fragrance. The rice cooker method is great for hands-off cooking — just set it and forget it!'
+  },
+
+  // =============================================
+  // JAPANESE RECIPES
+  // =============================================
+
+  'miso-bean-stew': {
+    title: 'Miso Bean & Leek Stew',
+    chinese: '',
+    tags: ['Japanese', 'Main'],
+    time: '30 mins',
+    servings: '4',
+    difficulty: 'Easy',
+    ingredients: [
+      '2 leeks, sliced into rounds',
+      '2 shallots, finely chopped',
+      '3-4 cloves garlic, minced',
+      '1 onion, diced (optional)',
+      '1 can (400g) butter beans or chickpeas, drained',
+      '500ml kombu dashi stock',
+      '3 tbsp white or red miso paste',
+      '2 tbsp soy sauce',
+      '1 tbsp mirin (optional, for sweetness)',
+      '100-150ml oat milk (for creaminess)',
+      '2 tbsp vegetable oil',
+      'Black pepper to taste',
+      'Chopped spring onions for garnish'
+    ],
+    instructions: [
+      'Prepare kombu stock by simmering dried kombu in water for 10-15 minutes, or use instant dashi powder.',
+      'Heat oil in a large pot over medium heat. Add shallots, garlic, and onion (if using) and sauté until fragrant and softened (3-4 minutes).',
+      'Add sliced leeks and stir-fry for another 3-4 minutes until they begin to soften.',
+      'Pour in the kombu stock and bring to a gentle simmer.',
+      'In a small bowl, mix the miso paste with a ladleful of the hot stock to dissolve it, then pour it back into the pot.',
+      'Add the beans (butter beans or chickpeas) and let simmer for 10 minutes.',
+      'Stir in the oat milk and heat through for 2-3 minutes to create a creamy consistency.',
+      'Season with soy sauce and mirin (if using). Taste and adjust seasoning - add more miso for depth or soy sauce for saltiness.',
+      'Add black pepper to taste.',
+      'Serve hot over steamed rice, couscous, quinoa, or lentils. Garnish with chopped spring onions.'
+    ],
+    tip: 'Don\'t boil the miso - add it when the heat is lower to preserve its beneficial probiotics and complex flavour. You can also add mushrooms, spinach, or bok choy for extra vegetables!'
   }
 };
