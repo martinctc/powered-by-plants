@@ -500,6 +500,13 @@ a:hover {
   margin: 0;
 }
 
+.restaurant-info .address {
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #888);
+  margin-top: 8px;
+  font-style: italic;
+}
+
 .restaurant-link {
   padding: 10px 20px;
   background: var(--gradient-hero);
