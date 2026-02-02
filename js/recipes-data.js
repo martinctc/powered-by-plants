@@ -333,6 +333,52 @@ const recipes = {
     tip: 'Juicy Marbles have an amazing meaty texture. If unavailable, use seitan or extra chickpeas!'
   },
 
+  'pumpkin-lentil-peanut-curry': {
+    title: 'Pumpkin Lentil Peanut Butter Curry',
+    chinese: '',
+    tags: ['Western', 'Main'],
+    time: '50 mins',
+    servings: '4-6',
+    difficulty: 'Easy',
+    ingredients: [
+      '500g pumpkin or butternut squash, peeled and cubed (2cm pieces)',
+      '200g red lentils, rinsed',
+      '3 tbsp smooth peanut butter (unsweetened)',
+      '1 can (400ml) coconut milk',
+      '1 can (400g) chopped tomatoes',
+      '1 large onion, diced',
+      '4 cloves garlic, minced',
+      '2 tbsp fresh ginger, grated',
+      '2 tbsp curry powder (mild or medium)',
+      '1 tsp ground cumin',
+      '1 tsp ground coriander',
+      '1/2 tsp turmeric',
+      '1/2 tsp chilli flakes (adjust to taste)',
+      '500ml vegetable stock',
+      '2 tbsp vegetable oil',
+      '1 tbsp soy sauce or tamari',
+      'Juice of 1 lime',
+      'Fresh coriander to garnish',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat oil in a large pot or Dutch oven over medium heat.',
+      'Add diced onion and sauté for 5-7 minutes until soft and translucent.',
+      'Add garlic and ginger, cooking for another 1-2 minutes until fragrant.',
+      'Stir in curry powder, cumin, coriander, turmeric, and chilli flakes. Toast the spices for 30 seconds until aromatic.',
+      'Add the cubed pumpkin and stir to coat with the spiced mixture. Cook for 2-3 minutes.',
+      'Pour in the chopped tomatoes and vegetable stock. Stir well and bring to a gentle boil.',
+      'Add the rinsed red lentils and stir to combine.',
+      'Reduce heat to low, cover, and simmer for 25-30 minutes, stirring occasionally. The pumpkin should be tender and the lentils fully cooked.',
+      'Stir in the peanut butter until fully melted and incorporated into the curry, creating a rich, creamy texture.',
+      'Pour in the coconut milk and mix well. Simmer for another 5 minutes.',
+      'Add soy sauce and lime juice. Taste and adjust seasoning with salt and pepper.',
+      'If the curry is too thick, add a splash more stock or water. If too thin, simmer uncovered for a few more minutes.',
+      'Serve hot over basmati rice, with naan bread, or with couscous. Garnish with fresh coriander and a wedge of lime.'
+    ],
+    tip: 'The peanut butter adds incredible creaminess and depth - don\'t skip it! You can also roast the pumpkin cubes first at 200°C for 20 minutes for a deeper, caramelised flavour before adding to the curry. For extra protein, throw in a can of chickpeas in the last 10 minutes. Leftovers taste even better the next day!'
+  },
+
   'lions-mane-steak': {
     title: 'Pan-Fried Lion\'s Mane Mushroom Steak',
     chinese: '',
@@ -706,5 +752,72 @@ const recipes = {
       'Serve hot over steamed rice, couscous, quinoa, or lentils. Garnish with chopped spring onions.'
     ],
     tip: 'Don\'t boil the miso - add it when the heat is lower to preserve its beneficial probiotics and complex flavour. You can also add mushrooms, spinach, or bok choy for extra vegetables!'
-  }
+  },
+
+  'teriyaki-oyster-mushroom-scallops': {
+    title: 'Teriyaki Oyster Mushroom Scallops',
+    chinese: '',
+    tags: ['Japanese', 'Quick', 'Main'],
+    time: '20 mins',
+    servings: '2-3',
+    difficulty: 'Easy',
+    ingredients: [
+      '300g oyster mushrooms (king oyster mushrooms work best)',
+      '2 tbsp vegetable oil or sesame oil',
+      'Spring onions and sesame seeds to garnish',
+      '',
+      'For the teriyaki sauce:',
+      '4 tbsp Japanese soy sauce (shoyu)',
+      '3 tbsp mirin',
+      '2 tbsp sake (or substitute with more mirin)',
+      '2 tbsp water',
+      '1.5 tbsp sugar or maple syrup',
+      '1 tsp cornstarch mixed with 1 tsp water (for thickening)',
+      '1 clove garlic, minced (optional)',
+      '1/2 tsp fresh ginger, grated (optional)'
+    ],
+    instructions: [
+      'Prepare the oyster mushrooms: Cut off the stems and slice the caps horizontally into 1-1.5cm thick "scallop" discs.',
+      'Using a sharp knife, score the top surface of each mushroom disc in a criss-cross diagonal pattern (like a checkerboard). This helps them absorb the sauce better and creates an authentic scallop appearance.',
+      'Make the teriyaki sauce: In a small bowl, combine soy sauce, mirin, sake, water, sugar, and optional garlic and ginger. Mix well and set aside.',
+      'Heat oil in a large frying pan or skillet over medium-high heat until shimmering.',
+      'Place the mushroom discs in the pan, scored side down. Don\'t overcrowd - cook in batches if needed.',
+      'Sear for 3-4 minutes without moving them until golden brown and caramelised.',
+      'Flip the mushrooms and sear the other side for another 3-4 minutes until golden.',
+      'Reduce heat to medium-low. Pour the teriyaki sauce mixture over the mushrooms.',
+      'Let the sauce simmer and reduce for 2-3 minutes, gently spooning it over the mushrooms to coat them.',
+      'Stir in the cornstarch slurry and cook for 1 more minute until the sauce thickens and becomes glossy.',
+      'Remove from heat once the mushrooms have absorbed the flavour and the sauce coats them beautifully.',
+      'Serve immediately, garnished with sliced spring onions and sesame seeds. Perfect over rice or as a starter!'
+    ],
+    tip: 'King oyster mushrooms have the best texture for this - they\'re meaty and don\'t shrink much when cooked. The criss-cross scoring really does make them taste remarkably like scallops! For extra umami, add a splash of kombu dashi to the sauce. Don\'t skip the searing step - the caramelisation is key to the flavour!'
+  },
+
+  // =============================================
+  // DESSERTS
+  // =============================================
+
+  'mango-tofu-pudding': {
+    title: 'Mango \'Oat Milk\' Tofu Pudding',
+    chinese: '芒果豆腐花',
+    tags: ['Chinese', 'Quick'],
+    time: '10 mins (plus defrosting time)',
+    servings: '2',
+    difficulty: 'Easy',
+    ingredients: [
+      'Frozen mango chunks (widely available in UK supermarkets for ~£3)',
+      'Oat milk (your desired amount)',
+      'Tofu pudding/Douhua (豆腐花) - available from Chinese or Asian supermarkets',
+      'Cooked sago (西米) - optional, for classic Cantonese style'
+    ],
+    instructions: [
+      'Put your desired amount of frozen mango chunks in a bowl.',
+      'Fill the bowl with oat milk like a cereal bowl, covering the mango.',
+      'Wait for the mango to completely defrost (about 30-60 minutes at room temperature, or leave in the fridge for a few hours).',
+      'Prepare the tofu pudding in a serving bowl.',
+      'Once the mango has defrosted, pour the mango and oat milk mixture on top of the tofu pudding.',
+      'If using, add cooked sago on top for an authentic Cantonese touch.',
+      'Serve immediately and enjoy!'
+    ],
+    tip: 'The oat milk becomes naturally sweetened by the defrosting mango, creating a delicious dairy-free dessert. You can also add a drizzle of maple syrup or agave if you prefer it sweeter. This is a refreshing take on a classic Cantonese dessert!'
 };
