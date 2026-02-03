@@ -16,25 +16,25 @@ Both Dauns and Unity Diner were plant-based restaurants that we've newly discove
 
 **Dauns** is a Scandinavian café / diner that is relaxing, welcoming, and has 'Analog Journal' vibes - would definitely recommend their Smørrebrød and Swedish meatballs. You can also buy their selection of vegan cheese and hotdogs - which I'm typically not a fan of - but are actually really good! 
 
-![Brunch at Dauns](powered-by-plants/images/blog/dauns-brunch.JPEG)
+![Brunch at Dauns](images/blog/dauns-brunch.JPEG)
 
 **Unity Diner** has to be recommended also because of their plant-based doner. As someone who used to (embarrassingly) survive on kebabs during my university days, I would say that their doner is actually really on point. They've nailed the post-night-out comfort food vibe, except you can eat it at a reasonable hour without regret.
 
-![Plant-based doner at Unity Diner](powered-by-plants/images/blog/unity-diner-doner.JPEG)
+![Plant-based doner at Unity Diner](images/blog/unity-diner-doner.JPEG)
 
 Finally, if you haven't tried **Tofu Vegan**, then you should. It definitely ranks top as my favourite vegan restaurant in London, but this time I've put Dauns and Unity Diner ahead purely as they're the two new favourites I've tried this Veganuary. Tofu Vegan does incredible Chinese dishes and their menu is big - it's the kind of place where you need to go multiple times just to scratch the surface.
 
-![Dishes at Tofu Vegan](powered-by-plants/images/blog/tofu-vegan.JPEG)
+![Dishes at Tofu Vegan](images/blog/tofu-vegan.JPEG)
 
 ## Top Recipes
 
 I'm not going to elaborate too much on these recipes - check out their links below. But I will say that the **mango tofu pudding** is so easy to make and definitely reminds me of having desserts in Hong Kong at places like Moon Kei or Hui Lau Shan. It's sweet, silky, and takes maybe fifteen minutes if you're moving slowly. The kind of recipe that makes you wonder why you ever buy dessert.
 
-![Mango tofu pudding dessert](powered-by-plants/images/blog/mango-tofu-dessert.JPEG)
+![Mango tofu pudding dessert](images/blog/mango-tofu-dessert.JPEG)
 
 I've also given the **oat milk miso kombu soup base** second place because it is so versatile - you can use it for hotpot, ramen, or just as a warming soup on its own. The umami depth you get from the kombu and miso is incredible, and the oat milk adds this subtle creaminess that rounds everything out. We ended up making this at least once a week.
 
-![Oat milk miso kombu soup base for hotpot](powered-by-plants/images/blog/oat-milk-miso-hotpot.JPEG)
+![Oat milk miso kombu soup base for hotpot](images/blog/oat-milk-miso-hotpot.JPEG)
 
 There are two joint third place recipes, as they're both so good and it's hard to choose between them. The pumpkin lentil peanut butter curry sounds weird on paper, but the peanut butter adds this richness and depth that makes it ridiculously moreish. Meanwhile, the teriyaki oyster mushroom scallops are probably the closest I've come to replicating that seafood texture and umami hit. They work brilliantly as a starter or on top of noodles.
 
@@ -42,7 +42,7 @@ There are two joint third place recipes, as they're both so good and it's hard t
 2. [Oat milk miso kombu soup base (for hotpot)](recipes.html)
 3. [Pumpkin lentil peanut butter curry](recipes.html) / [Teriyaki Oyster mushroom scallops](recipes.html)
 
-![Teriyaki oyster mushroom scallops](powered-by-plants/images/blog/oyster-mushrooms.JPEG)
+![Teriyaki oyster mushroom scallops](images/blog/oyster-mushrooms.JPEG)
 
 ## Top Tips
 
