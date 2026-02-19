@@ -57,17 +57,14 @@
     /* Recipe card clickable */
     .recipe-card {
       cursor: pointer;
-      position: relative;
     }
     .recipe-card::after {
       content: 'Click for recipe →';
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
       font-size: 0.8rem;
       color: #4CAF50;
       opacity: 0;
       transition: opacity 0.3s ease;
+      margin-top: 0.5rem;
     }
     .recipe-card:hover::after {
       opacity: 1;
@@ -75,22 +72,17 @@
 
     /* Recipe card icons */
     .recipe-icon {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      font-size: 2.5rem;
-      opacity: 0.8;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      display: block;
+      transition: transform 0.3s ease;
     }
     .recipe-card:hover .recipe-icon {
-      transform: scale(1.2) rotate(5deg);
-      opacity: 1;
+      transform: scale(1.15);
     }
     @media (max-width: 768px) {
       .recipe-icon {
-        font-size: 2rem;
-        top: 0.75rem;
-        right: 0.75rem;
+        font-size: 2.5rem;
       }
     }
 
