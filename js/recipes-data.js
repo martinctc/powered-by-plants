@@ -820,4 +820,5 @@ const recipes = {
       'Serve immediately and enjoy!'
     ],
     tip: 'The oat milk becomes naturally sweetened by the defrosting mango, creating a delicious dairy-free dessert. You can also add a drizzle of maple syrup or agave if you prefer it sweeter. This is a refreshing take on a classic Cantonese dessert!'
+  }
 };
