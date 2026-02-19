@@ -7,6 +7,11 @@
   <title>Restaurants | Powered by Plants</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
+    /* Override default hero background for custom illustration */
+    .hero::before {
+      display: none;
+    }
+    
     .restaurant-card {
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
@@ -77,11 +82,12 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" style="min-height: 50vh; background-image: url('images/restaurant-vegan.jpg');">
+  <section class="hero" style="min-height: 50vh; background-image: url('images/restaurant-vegan.jpg'); background-size: cover; background-position: center;">
     <div class="hero-content">
       <h1>Restaurants</h1>
       <p class="subtitle">Vegan-friendly spots in London & Hong Kong</p>
     </div>
+    <p style="position: absolute; bottom: 10px; right: 15px; color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin: 0; z-index: 2;">Illustration by Victoria Dong</p>
   </section>
 
   <!-- London Section -->
